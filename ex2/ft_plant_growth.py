@@ -5,30 +5,30 @@ class Plant:
         self.total_days = days
 
     def show(self) -> None:
-        print(f"{self.name}: {self.height}cm, {self.total_days} days old")
+        print(f"{self.name}: {self.height:.1f}cm, {self.total_days} days old")
 
     def grow(self, cm: float) -> None:
         self.height += cm
         
-    def age(self, day: float) -> None:
+    def age(self, day: int) -> None:
         self.total_days += day
 
 
 def main():
     plants = [
-                Plant("Rose", 25, 30),
+                Plant("Rose", 25.0, 30),
                 Plant("Sunflower", 80, 45),
                 Plant("Cactus", 15, 120)
     ]
-    growth_rate = 0.5
-    print(f"=== Garden Plant Growth ===")
-    plants[2].show()
+    growth_rate = 0.8
+    print("=== Garden Plant Growth ===")
+    plants[0].show()
     total_growth = 0
     for i in range(1, 8):
-        plants[2].age(1)
-        plants[2].grow(growth_rate)
+        plants[0].age(1)
+        plants[0].grow(growth_rate)
         print(f"=== Day {i} ===")
-        plants[2].show()
+        plants[0].show()
         total_growth += growth_rate
     print(f"Growth this week: {total_growth}cm")
 
