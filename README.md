@@ -76,9 +76,3 @@ chmod +x ex0/ft_garden_intro.py
 ## 📌 Notes
 
 This project is part of an educational module and focuses on progressive learning. Each exercise builds the foundation for the next.
-
----
-
-## Status
-
-FINISHED
