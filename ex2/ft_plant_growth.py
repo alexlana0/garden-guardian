@@ -9,7 +9,7 @@ class Plant:
 
     def grow(self, cm: float) -> None:
         self.height += cm
-        
+
     def age(self, day: int) -> None:
         self.total_days += day
 

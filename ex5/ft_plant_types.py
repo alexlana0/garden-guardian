@@ -43,7 +43,7 @@ class Plant:
 
 
 class Flower(Plant):
-    def __init__(self, name: str, height: float, days: int, color: 
+    def __init__(self, name: str, height: float, days: int, color:
                  str) -> None:
         super().__init__(name, height, days)
         self._color = color
@@ -86,7 +86,7 @@ class Vegetable(Plant):
     def grow(self, cm: float) -> None:
         super().grow(cm)
         self._nutritional_value += 10
-    
+
     def age(self, day: int) -> None:
         super().age(day)
         self._nutritional_value += 10
