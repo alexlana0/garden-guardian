@@ -10,7 +10,7 @@ class Plant:
     def grow(self, cm: float) -> None:
         self._height += cm
 
-    def age(self, day: float) -> None:
+    def age(self, day: int) -> None:
         self._days += day
 
     def get_name(self) -> str:
@@ -49,7 +49,7 @@ class Flower(Plant):
         self._color = color
 
     def bloom(self) -> None:
-        print(f"{self._name} is blooming beautifuly!")
+        print(f"{self._name} is blooming beautifully!")
 
     def show(self) -> None:
         super().show()
@@ -87,7 +87,7 @@ class Vegetable(Plant):
         super().grow(cm)
         self._nutritional_value += 10
     
-    def age(self, day: float) -> None:
+    def age(self, day: int) -> None:
         super().age(day)
         self._nutritional_value += 10
 

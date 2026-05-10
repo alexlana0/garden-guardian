@@ -10,14 +10,15 @@ class Plant:
     def grow(self, cm: float) -> None:
         self.height += cm
         
-    def age(self, day: float) -> None:
+    def age(self, day: int) -> None:
         self.days += day
+
 
 def main():
     plants = [
         Plant("Rose", 25, 30),
-        Plant("Oak", 200, 120),
-        Plant("Cactus", 15, 120),
+        Plant("Oak", 200, 365),
+        Plant("Cactus", 5, 90),
         Plant("Sunflower", 80, 45),
         Plant("Fern", 15, 120)
     ]

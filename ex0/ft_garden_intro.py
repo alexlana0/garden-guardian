@@ -1,6 +1,6 @@
 def main():
-    name = "Monstera Deliciosa"
-    height = 15
+    name = "Rose"
+    height = 25
     age = 30
 
     print("=== Welcome to My Garden ===")

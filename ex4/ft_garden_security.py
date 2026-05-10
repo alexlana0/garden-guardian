@@ -10,7 +10,7 @@ class Plant:
     def grow(self, cm: float) -> None:
         self._height += cm
 
-    def age(self, day: float) -> None:
+    def age(self, day: int) -> None:
         self._days += day
 
     def get_name(self) -> str:
@@ -27,16 +27,16 @@ class Plant:
 
     def set_height(self, height: float) -> None:
         if height < 0:
-            print(f"{self._name}: Error, height can't be negative"
-                  f"Height update rejected")
+            print(f"{self._name}: Error, height can't be negative")
+            print("Height update rejected")
         else:
             self._height = height
             print(f"Height updated: {self._height}cm")
 
     def set_age(self, days: int) -> None:
         if days < 0:
-            print(f"{self._name}: Error, age can't be negative"
-                  f"Age update rejected")
+            print(f"{self._name}: Error, age can't be negative")
+            print("Age update rejected")
         else:
             self._days = days
             print(f"Age updated: {self._days} days")
@@ -44,7 +44,7 @@ class Plant:
 
 def main():
     plants = [
-        Plant("Rose", 25, 30),
+        Plant("Rose", 15, 10),
         Plant("Oak", 200, 120),
         Plant("Cactus", 15, 120),
         Plant("Sunflower", 80, 45),
